@@ -60,7 +60,7 @@ var ProjectManager = (function () {
 
     ProjectManager.prototype.remove = function (id) {
 
-        var projects = _.reject(self.projects, function (project) {
+        var projects = _.reject(this.projects, function (project) {
             return project.id === id;
         });
 
