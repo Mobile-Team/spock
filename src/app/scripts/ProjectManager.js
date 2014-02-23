@@ -25,7 +25,7 @@ var ProjectManager = (function () {
                 return
             }
 
-            var grunt = require(dir + "/node_modules/grunt/");
+            var grunt = require(GruntPath);
 
             var GruntinitConfigFnPath = grunt.file.findup('Gruntfile.{js,coffee}', {cwd: dir, nocase: true});
 
